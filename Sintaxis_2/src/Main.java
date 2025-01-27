@@ -121,15 +121,13 @@ System.out.println(10>9); //true
 
  System.out.println(10!=9); //true
 
-int x=3;
 
-System.out.println(x<5 && x>10);
+int f=3;
+System.out.println(f<5 && f>10);
 
-System.out.println(x<5 || x>10);
+System.out.println(f<5 || f>10);
 
-System.out.println(!(x<5 && x>10));
-
-
+System.out.println(!(f<5 && f>10));
 
 
 
