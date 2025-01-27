@@ -33,7 +33,18 @@ public class Main {
         System.out.println("Programa nombre usuario");
 
         System.out.println("Ingresa tu nombre");
-        String nombre = sca.Strin
+        String nombre = sca.next();
+
+        System.out.println("Introduce tu apellido paterno");
+        String ap_p = sca.next();
+
+        System.out.println("Introduce tu apellido materno");
+        String ap_m = sca.next();
+
+        for(int i=0;i<3;i++){
+
+            System.out.println("Nombre completo: "+nombre+" "+ap_p+" "+ap_m);
+        }
 
 
 
