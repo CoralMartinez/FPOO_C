@@ -46,6 +46,24 @@ public class Main {
             System.out.println("Nombre completo: "+nombre+" "+ap_p+" "+ap_m);
         }
 
+        //Fin Programa 2
+
+        //Inicio programa 3
+
+        System.out.println("Programa suma de numeros");
+
+        System.out.println("Introduce un numero entero");
+        int numero_1 = sca.nextInt();
+        int sumanum=0;
+
+        for(int e=1;e<=numero_1;e++){
+
+            sumanum = sumanum + numero_1;
+
+            System.out.println("El total de la suma es: "+sumanum);
+        }
+
+
 
 
     }//Llave static
