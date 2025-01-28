@@ -21,8 +21,7 @@ public class Main {
         }
 
         else{
-            System.out.println("El número es impar");
-        }
+            System.out.println("El número es impar");        }
 
         //Fin programa 2
 
