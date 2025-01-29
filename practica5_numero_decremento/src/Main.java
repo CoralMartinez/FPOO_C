@@ -8,17 +8,14 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         Scanner sca = new Scanner(System.in);
 
-        System.out.println("Programa 1. Número entero y números impares");
+        System.out.println("Programa 2. Número entero decremento");
         System.out.println("Ingresa un número entero positivo");
-        int numero = sca.nextInt();
+        int num = sca.nextInt();
 
-
-        for (int i = 1; i <= numero; i++) {
-
-             if (i % 2 == 0){
-                System.out.printf(i+", ");
-
-             }
+        for (int i = num; i >= 0; i--) {
+            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+            System.out.printf(i+", ");
         }
     }
 }
