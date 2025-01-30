@@ -13,52 +13,18 @@ public class Main {
 
         System.out.println("Programa 3. Tablas de multiplicar del 1 al 10\n");
 
-        int multi = 0;
-        int multi2 = 0;
-        int multi3 = 0;
-        int multi4 = 0;
-
-
-        System.out.println("Tabla de multiplicar del 1\n");
 
         for (int i = 1; i <= 10; i++) {
 
-            multi = i * 1;
+            System.out.println("Tabla de multiplicar del: "+i+"\n");
 
-            System.out.println("1 * " + i +" = "+ multi);
+            for(int j = 1;j<=10; j++){
 
-        }
+                System.out.println(i+ " x "+j+" = "+i*j + "\n");
 
-        System.out.println("\nTabla de multiplicar del 2\n");
-
-        for (int i = 1; i <= 10; i++) {
-
-            multi2 = i * 2;
-
-            System.out.println("2 * " + i +" = "+ multi2);
+            }
 
         }
-
-        System.out.println("\nTabla de multiplicar del 3\n ");
-
-        for (int i = 1; i <= 10; i++) {
-
-            multi3 = i * 3;
-
-            System.out.println("3 * " + i +" = "+ multi3);
-
-        }
-
-        System.out.println("\nTabla de multiplicar del 4\n ");
-
-        for (int i = 1; i <= 10; i++) {
-
-            multi4 = i * 4;
-
-            System.out.println("4 * " + i +" = "+ multi4);
-
-        }
-
 
 
     }
