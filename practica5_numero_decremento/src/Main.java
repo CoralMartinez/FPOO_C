@@ -13,9 +13,8 @@ public class Main {
         int num = sca.nextInt();
 
         for (int i = num; i >= 0; i--) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.printf(i+", ");
+
+        System.out.printf(i+", ");
         }
     }
 }
