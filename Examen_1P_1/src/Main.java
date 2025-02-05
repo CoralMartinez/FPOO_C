@@ -45,23 +45,33 @@ public class Main {
 
         */
 
-        if (numero % 2 == 0) {
-            for (int i = numero; i <= 400; i++) {
+       /* for (int i = numero; i <= 400;i++) {
 
-                System.out.println(i);
+            if (numero % 2 == 0) {
+                System.out.println("ES PAR" + i);
+            }
+
+            else {
+                System.out.println("    NO ES PAR"+i);
             }
         }
 
+        System.out.println("----:)--");
 
 
+        */
 
 
         if (numero >= 200 && numero <= 400) {
 
             if (numero % 2 == 0) {
-              for (int i = numero; i <= 400; i++) {
 
-                  System.out.println(i);
+                for (int i = numero; i <= 400; i++) {
+
+                    if (i % 2 == 0) {
+
+                        System.out.println(i);
+                    }
                 }
             }
                 else{
