@@ -1,15 +1,58 @@
 public class Spartan {
 
-    public String nombre;
+    //Se presentan errores debido a que ahora los atributos son privados
 
-    int salud;
+    private String nombre;
 
-    int escudo;
+    private int salud;
 
-    String arma_principal;
+    private int escudo;
+
+    private String arma_principal;
+
+    public Spartan(String nombre, int salud, int escudo, String arma_principal) {
+        this.nombre = nombre;
+        this.salud = salud;
+        this.escudo = escudo;
+        this.arma_principal = arma_principal;
+    }
+
+  //Se generan los get y los sets
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getSalud() {
+        return salud;
+    }
+
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
+
+    public int getEscudo() {
+        return escudo;
+    }
+
+    public void setEscudo(int escudo) {
+        this.escudo = escudo;
+    }
+
+    public String getArma_principal() {
+        return arma_principal;
+    }
+
+    public void setArma_principal(String arma_principal) {
+        this.arma_principal = arma_principal;
+    }
 
 
-    //Métodos del Spartam
+    //Métodos del Spartan
 
     public void mostrarInfo(){
 
@@ -23,11 +66,9 @@ public class Spartan {
 
     }
 
-
     public void atacar(String enemigo){
 
         System.out.println(nombre+" ataca a "+enemigo+" con "+arma_principal);
-
     }
 
     public void recargarArma(int municiones){
@@ -37,12 +78,9 @@ public class Spartan {
         int total= restante+municiones;
 
         System.out.println("El arma "+arma_principal+ " tiene "+ total+ " balas");
-
     }
 
-
     public void correr(boolean status){
-
 
         if(status){
 
@@ -56,6 +94,12 @@ public class Spartan {
         }
 
     }
+
+    private void consultaCortana(){
+        System.out.println("Conversación privada");
+
+    }
+
 
 
 }//Llave de la clase
