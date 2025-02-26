@@ -1,7 +1,4 @@
-import java.util.Scanner;
-
-
-
+import java.util.*;
 
 /*
 
@@ -31,9 +28,9 @@ tendrá agregar una para comprobar fortaleza del password.
 
       b) Verificar contraseña  (fortaleza de la contraseña/password, si la longitud tiene mínimo 8 caracteres
       y si tienen mayúsculas o carácteres especiales (si la contraseña solo tiene números, pero no tiene mayúsculas
-      ni carácteres especiales la contraseña tiene una fortaleza baja, si la contraseña tiene números
-      y mayúsculas, tiene una fortaleza intermedia, si la contraseña tiene números, mayúsculas
-      y carácteres especiales, tiene una fortaleza alta.
+      ni carácteres especiales la contraseña tiene una ----fortaleza baja----, si la contraseña tiene números
+      y mayúsculas, tiene una ----fortaleza intermedia----, si la contraseña tiene números, mayúsculas
+      y carácteres especiales, tiene una ----fortaleza alta----.
 
 
 
@@ -64,6 +61,11 @@ String respuesta= "S";
 
         System.out.println("Ingresa la longitud de la contraseña");
         longitud = sr.nextInt();
+
+        System.out.println(longitud.length());
+
+        //Se colocan 2 opciones en JOptionPane
+
         System.out.println("¿Deseas agregar mayúsculas o caracteres especiales? Si: S No: N");
         respuesta = sr.nextLine();
 
@@ -73,7 +75,7 @@ String respuesta= "S";
 
             mayuscula_caracterespecial=sr.nextLine();
 
-            System.out.println("Ingresa los valores para tu generar tu contraseña");
+            System.out.println("Ingresa los valores para generar tu contraseña");
             password=sr.nextLine();
         }
 

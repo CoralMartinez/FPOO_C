@@ -1,10 +1,13 @@
+import javax.swing.*;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
+
 public class Main {
     public static void main(String[] args) {
-
-
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
         //Se crea el primer objeto
 
         caja_popular usuario1 = new caja_popular();
@@ -31,17 +34,20 @@ public class Main {
 
         //Se usan los métodos
 
-
-
         usuario1.Consultar_saldo();
-        usuario2.Consultar_saldo();
         usuario1.Ingresar_efectivo();
-        usuario1.retirar_efectivo();
-        usuario1.Depositar_otracuenta();
 
+        int opcion_menu;
 
+        int opcion_menu = (JOptionPane.showInputDialog(null, "Elija una opción del menú: \n"+
+                "1. Consultar saldo \n"+
+                "2. Ingresar efectivo \n"+
+                "3. Retirar efectivo \n"+
+                "4. Depositar \n" ));
 
 
 
     }
-} //Llave Main
+}
+
+
