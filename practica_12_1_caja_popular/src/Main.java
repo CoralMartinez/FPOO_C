@@ -26,28 +26,56 @@ public class Main {
 
         //Se asignan atributos al objeto (usuario a depositar)
 
-        usuario2.id_administracioncuenta  = 23;
+        usuario2.id_administracioncuenta = 23;
         usuario2.nombre_titular_a_depositar = "Carlos Medina Juárez";
         usuario2.numero_cuenta_a_depositar = 1111122222;
         usuario2.edad_titular_a_depositar = 45;
-        usuario2.saldo_titular_a_depositar= 800.00;
+        usuario2.saldo_titular_a_depositar = 800.00;
 
         //Se usan los métodos
 
-        usuario1.Consultar_saldo();
-        usuario1.Ingresar_efectivo();
 
-        int opcion_menu;
+        while (true) {
+             String opcion_menu = JOptionPane.showInputDialog("Elija una opción del menú: \n" +
+                    "1. Consultar saldo \n" +
+                    "2. Ingresar efectivo \n" +
+                    "3. Retirar efectivo \n" +
+                    "4. Depositar \n"+
+                    "5. Salir");
 
-        int opcion_menu = (JOptionPane.showInputDialog(null, "Elija una opción del menú: \n"+
-                "1. Consultar saldo \n"+
-                "2. Ingresar efectivo \n"+
-                "3. Retirar efectivo \n"+
-                "4. Depositar \n" ));
+            if (opcion_menu == null || opcion_menu.equals("6")) {
+                break;
+            }
 
 
+
+            switch(opcion_menu){
+
+                case "1":
+
+                    usuario1.Consultar_saldo();
+
+                    break;
+                case "2":
+                    usuario1.Ingresar_efectivo();
+                    break;
+                case "3":
+                    usuario1.retirar_efectivo();
+                    break;
+
+                case "5":
+                    JOptionPane.showMessageDialog(null, "Saliendo...");
+                    System.exit(0);
+                    break;
+
+                default:
+                    JOptionPane.showMessageDialog(null, "Opción no válida.");
+
+            }
+
+
+        }
 
     }
 }
-
 

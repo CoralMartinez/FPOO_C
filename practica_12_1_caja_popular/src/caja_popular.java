@@ -58,11 +58,28 @@ public class caja_popular {
         cantidad_ingresar=Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es la cantidad que desea ingresar? "));
 
         JOptionPane.showMessageDialog(null, "La cantidad a ingresar en efectivo es de:"+cantidad_ingresar+"\n");
-        JOptionPane.showMessageDialog(null, "Ingreso realizado con éxito");
 
         operacion_ingreso = saldo_titular + cantidad_ingresar;
 
-        JOptionPane.showMessageDialog(null, "Su saldo es de: "+operacion_ingreso);
+        JOptionPane.showMessageDialog(null, "Ingreso realizado con éxito\n"+"Su saldo es de: "+operacion_ingreso);
+    }
+
+    //Se agrega una nueva variable
+
+    //Se quitan variables que solo se deben de mostrar
+
+    public void  retirar_efectivo(){
+        JOptionPane.showMessageDialog(null, "Retirar efectivo \n"+"Número de cuenta: "+numero_cuenta+"\n"+
+                "Su saldo es: "+operacion_ingreso);
+
+        cantidad_retirar=Double.parseDouble(JOptionPane.showInputDialog("¿Cuánto desea retirar? "));
+        JOptionPane.showMessageDialog(null,"La cantidad que desea retirar es: "+cantidad_retirar);
+
+        operacion_retirar= operacion_ingreso-cantidad_retirar;
+
+        JOptionPane.showMessageDialog(null, "Retiro realizado con éxito\n"+
+                "Su saldo es de: "+operacion_retirar);
+
     }
 
 
