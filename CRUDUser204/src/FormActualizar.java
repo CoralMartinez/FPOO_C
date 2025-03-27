@@ -275,7 +275,7 @@ public class FormActualizar extends javax.swing.JFrame {
         else
         {       
             //En caso contrario muestra el siguiente mensaje:
-            JOptionPane.showMessageDialog(this,"Nombre del usuario no actualizado", "Error",JOptionPane.ERROR_MESSAGE);  
+            JOptionPane.showMessageDialog(this,"Nombre del usuario no actualizado", "No actualizado",JOptionPane.INFORMATION_MESSAGE);  
         }
        limpiarcampos();
       
@@ -331,7 +331,7 @@ public class FormActualizar extends javax.swing.JFrame {
         else
         {       
             //En caso contrario muestra el siguiente mensaje:
-            JOptionPane.showMessageDialog(this,"Correo del usuario no actualizado", "Error",JOptionPane.ERROR_MESSAGE);  
+            JOptionPane.showMessageDialog(this,"Correo del usuario no actualizado",  "No actualizado",JOptionPane.INFORMATION_MESSAGE);  
         }
        limpiarcampos();
       
@@ -388,7 +388,7 @@ public class FormActualizar extends javax.swing.JFrame {
         else
         {       
             //En caso contrario muestra el siguiente mensaje:
-            JOptionPane.showMessageDialog(this,"Contraseña del usuario no actualizada", "Error",JOptionPane.ERROR_MESSAGE);  
+            JOptionPane.showMessageDialog(this,"Contraseña del usuario no actualizada",  "No actualizado",JOptionPane.INFORMATION_MESSAGE);  
         }
        limpiarcampos();
       
