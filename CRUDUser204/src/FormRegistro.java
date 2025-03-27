@@ -8,8 +8,8 @@
  * @author coral
  */
 
-import java.sql.Connection;
 import javax.swing.JOptionPane;
+import java.sql.Connection;
         
 public class FormRegistro extends javax.swing.JFrame {
 

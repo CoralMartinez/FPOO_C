@@ -131,7 +131,7 @@ public class FormConsulta extends javax.swing.JFrame {
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
         // TODO add your handling code here:
-        //1. Obtener el valor del text, en donde se coloca el id para realziar consultas
+        //1. Obtener el valor del text, en donde se coloca el id para realizar consultas
         String idtext=txtid.getText();
         
         //2. Se valida que no exista vacío

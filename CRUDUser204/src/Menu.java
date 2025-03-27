@@ -123,6 +123,11 @@ public class Menu extends javax.swing.JFrame {
 
     private void jCheckBoxMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem3ActionPerformed
         // TODO add your handling code here:
+        
+        FormActualizar FA = new FormActualizar();
+        FA.setVisible(true);
+        
+        
     }//GEN-LAST:event_jCheckBoxMenuItem3ActionPerformed
 
     private void jCheckBoxMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem4ActionPerformed
