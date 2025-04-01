@@ -40,7 +40,7 @@ public class FormEliminar extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtideliminar = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
@@ -68,7 +68,7 @@ public class FormEliminar extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         btnbuscarporid.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnbuscarporid.setText("Busca por id");
+        btnbuscarporid.setText("Buscar por id");
         btnbuscarporid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbuscarporidActionPerformed(evt);

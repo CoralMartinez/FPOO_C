@@ -34,7 +34,7 @@ public class Menu extends javax.swing.JFrame {
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jCheckBoxMenuItem2 = new javax.swing.JCheckBoxMenuItem();
         jCheckBoxMenuItem3 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem4 = new javax.swing.JCheckBoxMenuItem();
+        FormEliminar = new javax.swing.JCheckBoxMenuItem();
         jMenu4 = new javax.swing.JMenu();
 
         jMenu1.setText("jMenu1");
@@ -77,14 +77,14 @@ public class Menu extends javax.swing.JFrame {
         });
         jMenu3.add(jCheckBoxMenuItem3);
 
-        jCheckBoxMenuItem4.setSelected(true);
-        jCheckBoxMenuItem4.setText("Eliminar Usuario");
-        jCheckBoxMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        FormEliminar.setSelected(true);
+        FormEliminar.setText("Eliminar Usuario");
+        FormEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBoxMenuItem4ActionPerformed(evt);
+                FormEliminarActionPerformed(evt);
             }
         });
-        jMenu3.add(jCheckBoxMenuItem4);
+        jMenu3.add(FormEliminar);
 
         jMenuBar1.add(jMenu3);
         jMenuBar1.add(jMenu4);
@@ -130,13 +130,13 @@ public class Menu extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jCheckBoxMenuItem3ActionPerformed
 
-    private void jCheckBoxMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem4ActionPerformed
+    private void FormEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FormEliminarActionPerformed
         // TODO add your handling code here:
         
         FormEliminar FE = new FormEliminar();
         FE.setVisible(true);
         
-    }//GEN-LAST:event_jCheckBoxMenuItem4ActionPerformed
+    }//GEN-LAST:event_FormEliminarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,10 +174,10 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBoxMenuItem FormEliminar;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem3;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

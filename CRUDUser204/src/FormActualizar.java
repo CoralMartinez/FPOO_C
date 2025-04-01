@@ -48,7 +48,7 @@ public class FormActualizar extends javax.swing.JFrame {
         txtcorreo = new javax.swing.JTextField();
         txtcontrasena = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
