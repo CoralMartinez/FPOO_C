@@ -143,15 +143,42 @@ public class UserCRUD {
         }
         
     }//Fin de la ACTUALIZACIÓN de la contraseña
+    
+    
+    public boolean eliminarusuario(String id_usuario){
+        
+        String insertSQL="DELETE FROM usuarios WHERE id_usuario=?";//? como parámetro que luego se obtendrá
+        
+        
+        try{ //Se asigna la sentencia y los parámetros para su ejecución
+            PreparedStatement ps=conexion.prepareStatement(insertSQL);
+            
+            ps.setString(1, id_usuario);
+            return ps.executeUpdate()>0;
+           
+        }
+        
+        catch(SQLException e){
+            //Se imprime en consola un mensaje en caso de que no se ejecute el INSERT
+            System.out.println("Error al eliminar el registro con ese id"+e.getMessage());//Las excepciones son para observar donde está el error
+            return false;
+        }
+        
+    }//Fin de la ELIMINACIÓN de usuario
 
-
-    
-    
-    
-    
     
 }//Llave fin de la clase
 
 
  
+
+
+
+
+
+
+
+
+
+
 

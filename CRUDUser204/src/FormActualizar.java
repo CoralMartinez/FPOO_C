@@ -54,12 +54,14 @@ public class FormActualizar extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Actualizar Usuario");
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel2.setText("Nombre:");
+
+        txtid.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        btn_act_nombre.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btn_act_nombre.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn_act_nombre.setText("Actualizar");
         btn_act_nombre.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btn_act_nombre.addActionListener(new java.awt.event.ActionListener() {
@@ -68,6 +70,7 @@ public class FormActualizar extends javax.swing.JFrame {
             }
         });
 
+        jTable1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -81,12 +84,13 @@ public class FormActualizar extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel4.setText("Correo:");
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setText("Contraseña:");
 
+        btnbuscarporid.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnbuscarporid.setText("Buscar por id");
         btnbuscarporid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,7 +98,7 @@ public class FormActualizar extends javax.swing.JFrame {
             }
         });
 
-        btn_act_correo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btn_act_correo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn_act_correo.setText("Actualizar");
         btn_act_correo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,7 +106,7 @@ public class FormActualizar extends javax.swing.JFrame {
             }
         });
 
-        btn_act_contrasena.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btn_act_contrasena.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn_act_contrasena.setText("Actualizar");
         btn_act_contrasena.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,11 +114,11 @@ public class FormActualizar extends javax.swing.JFrame {
             }
         });
 
-        txtnombre.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtnombre.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        txtcorreo.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtcorreo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        txtcontrasena.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtcontrasena.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -124,33 +128,32 @@ public class FormActualizar extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addGap(5, 5, 5)
+                                .addComponent(txtcontrasena, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel2))
+                                .addGap(29, 29, 29)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtnombre, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
+                                    .addComponent(txtcorreo))))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn_act_nombre)
+                            .addComponent(btn_act_correo)
+                            .addComponent(btn_act_contrasena)))
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(txtid, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(34, 34, 34)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnbuscarporid))
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(5, 5, 5)
-                                .addComponent(txtcontrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel2))
-                                .addGap(24, 24, 24)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtnombre)
-                                    .addComponent(txtcorreo))))
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(btn_act_contrasena, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(btn_act_correo, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addComponent(btn_act_nombre))))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(34, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -180,7 +183,7 @@ public class FormActualizar extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(txtcontrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_act_contrasena))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();

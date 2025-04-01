@@ -132,6 +132,10 @@ public class Menu extends javax.swing.JFrame {
 
     private void jCheckBoxMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem4ActionPerformed
         // TODO add your handling code here:
+        
+        FormEliminar FE = new FormEliminar();
+        FE.setVisible(true);
+        
     }//GEN-LAST:event_jCheckBoxMenuItem4ActionPerformed
 
     /**
