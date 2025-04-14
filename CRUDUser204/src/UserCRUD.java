@@ -33,8 +33,6 @@ public class UserCRUD {
     
     }//Fin del INSERT
     
-    //Método para Consultar por id
-    
     public ResultSet buscarporid(int id){
         String sqlBuscar= "SELECT * FROM usuarios WHERE id_usuario=?";//?--> parámetro pendiente
         
@@ -52,9 +50,7 @@ public class UserCRUD {
             System.out.println("Error al buscar por id"+e.getMessage());//Las excepciones son para observar donde está el error
             return null;
         }
-            
-        
-        
+           
     }//Fin del Método para Consultar por id
     
     
